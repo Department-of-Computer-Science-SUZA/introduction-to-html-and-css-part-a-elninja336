@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <h2>Registration Form</h2>
+
+    <form action="submit.html" method="post" enctype="multipart/form-data">
+
+      
+      <!-- Personal Info -->
+      <fieldset>
+        <legend>Personal Information</legend>
+  
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </fieldset>
+  
+      <!-- Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+  
+        <label>Gender:</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+  
+        <label>Interests:</label>
+        <div class="interests">
+          <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+          <label><input type="checkbox" name="interests" value="music"> Music</label>
+          <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+        </div>
+  
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">--Select Country--</option>
+          <option value="tz">Tanzania</option>
+          <option value="ke">Kenya</option>
+          <option value="ug">Uganda</option>
+          <option value="ng">Nigeria</option>
+        </select>
+
+        <input type="file" name="profile_picture" accept="image/*">
+
+      </fieldset>
+  
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+  
+    </form>
+  
+
+
+
+
+</body>
+</html>
